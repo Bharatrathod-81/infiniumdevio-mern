@@ -6,7 +6,6 @@ const router = require('./router/employee.router');
 const { initializeDBConnection } = require('./db/db.connect');
 const app = express()
 const port = process.env.PORT || 4000 ;
-const mode = process.env.NODE_ENV
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // support encoded bodies
